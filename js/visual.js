@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    /*------------------------전역변수 부---------------------- */
     var $txtBox, $txtBox_ul, $txtBox_ul_li, $sliderBox, $sliderBox_ul, $sliderBox_ul_li, $floatBox, $floatBox_ul, $floatBox_ul_li, 
     $btnNext, speed, isAnimated,
     
@@ -20,12 +21,17 @@ $(document).ready(function(){
     $visual = $('#visual');
     $btnNext = $visual.find('.btnNext>li');
     
-
+/*------------------------이벤트 바인딩---------------------- */
     $btnNext.on('click' ,function(){
 		
 		var i = $(this).index();
 
-		$txtBox_ul_li.removeClass('on');
+        activation(i);
+    });
+    
+    /*------------------------함수 정의 부---------------------- */
+    function activation(){
+        $txtBox_ul_li.removeClass('on');
         $txtBox_ul_li.eq(i).addClass('on');
         
         $line_ul_li.removeClass('on');
@@ -39,6 +45,5 @@ $(document).ready(function(){
 
 		$btnNext.removeClass('on');
 		$btnNext.eq(i).addClass('on');
-
-	})
+    }
 })
