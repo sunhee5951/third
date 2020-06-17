@@ -17,15 +17,15 @@ img {vertical-align:top;}
 #navi > li.on div {background: rgb(216, 67, 92); position: absolute; top: 15%; left: 73%; opacity: 1;}
 
 /* header */
-header {width: 100%;  height: 100%; background: #fff; padding: 0px 110px; box-sizing: border-box; position: absolute; transform: 0.5s; transition: 0.5s; }
-header .inner {width:100%; height: 130px; display: flex; align-items: center;   transform: 1s; position: relative; z-index: 3;transition: 0.5s; }
-header .inner .btnCall {font: 20px/1 'arial'; color:#444; font-weight: 100; position:absolute; left:3%; top:50%; transform:translateX(-50%);}
-header #gnb {display: flex; position: absolute; right: 45%; }
-header #gnb li a {font:bold 16px/1 'arial'; font-weight: 100; color:#333; padding:0px 2vw;}
-header #search {display: flex; position: absolute; right: 0%; z-index: 3;}
-header #search input {font: 15px/1 'arial'; color: black; padding: 0px 1vw; border-style: none; background: none; border-bottom: 1px solid #555;}::-webkit-input-placeholder{color: #555;}
-header #search a {position: absolute; top: -5px; right: 0%;}
-header #search a i {color: #555;}
+#header {width: 100%;  height: 100%; background: #fff; padding: 0px 110px; box-sizing: border-box; position: absolute; transform: 0.5s; transition: 0.5s; }
+#header .inner {width:100%; height: 130px; display: flex; align-items: center;   transform: 1s; position: relative; z-index: 3;transition: 0.5s; }
+#header .inner .btnCall {font: 20px/1 'arial'; color:#444; font-weight: 100; position:absolute; left:3%; top:50%; transform:translateX(-50%);}
+#header #gnb {display: flex; position: absolute; right: 45%; }
+#header #gnb li a {font:bold 16px/1 'arial'; font-weight: 100; color:#333; padding:0px 2vw;}
+#header #search {display: flex; position: absolute; right: 0%; z-index: 3;}
+#header #search input {font: 15px/1 'arial'; color: black; padding: 0px 1vw; border-style: none; background: none; border-bottom: 1px solid #555;}::-webkit-input-placeholder{color: #555;}
+#header #search a {position: absolute; top: -5px; right: 0%;}
+#header #search a i {color: #555;}
 
 /* visual */
 #visual {padding: 0px 0px 100px 130px; box-sizing: border-box;  position: relative; overflow: hidden; z-index: 1;}
@@ -232,10 +232,10 @@ background-color: black; left: 16.9878px; }
 #navi {left: 0%;}
 
 /* header */
-header {padding: 0px 45px; box-sizing: border-box; }
-header .inner {width:100%; height:80px; }
-header #gnb {right: 2%;}
-header #search {display: none;}
+#header {padding: 0px 45px; box-sizing: border-box; }
+#header .inner {width:100%; height:80px; }
+#header #gnb {right: 2%;}
+#header #search {display: none;}
 
 /* visual */
 #visual {padding: 0px 0px 0px 50px; box-sizing: border-box;}
@@ -311,9 +311,9 @@ width: 71.02px; height: 71.02px; transform: scaleY(0.6) rotate(-45deg); left: 13
 /* mobile */
 @media screen and (max-width:739px){  
 #navi {display: none; } 
-header .inner {height:80px; }
-header .inner .btnCall {left:3%; top:50%; }
-header #gnb {display: none;}
+#header .inner {height:80px; }
+#header .inner .btnCall {left:3%; top:50%; }
+#header #gnb {display: none;}
 
 /* visual */
 .txtBox li {width: 40%; height: 300px; position: absolute; top: 17%; left: 0%; opacity: 0; z-index: 2;}
