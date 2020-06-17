@@ -20,11 +20,36 @@ $(document).ready(function(){
 
     $visual = $('#visual');
     $btnNext = $visual.find('.btnNext>li');
-    
+
 /*------------------------이벤트 바인딩---------------------- */
     $btnNext.on('click' ,function(){
 		var i = $(this).index();
         activation(i);
+    });
+
+    sliding({
+        type: 'text',
+        selector: '.txt1',
+        speed: 700,
+        delay: 0
+    }); 
+    sliding({
+        type: 'text',
+        selector: '.txt2',
+        speed: 700,
+        delay: 700
+    }); 
+    sliding({
+        type: 'text',
+        selector: '.txt3',
+        speed: 700,
+        delay: 1000
+    }); 
+    sliding({
+        type: 'box',
+        selector: '.box1',
+        speed: 600,
+        delay: 0
     });
     
     /*------------------------함수 정의 부---------------------- */
@@ -43,5 +68,36 @@ $(document).ready(function(){
 
 		$btnNext.removeClass('on');
 		$btnNext.eq(i).addClass('on');
+    }
+    function sliding(options){   
+
+        var defaults = {
+            type: 'text',
+            selector: '.txt',
+            speed: 600,
+            delay:0 
+        }
+        var options = $.extend({},defaults,options);
+        
+        if(options.type=='text'){
+            var bgColor = $(options.selector).children('span').css('color');
+        }else{
+            var bgColor = $(options.selector).attr('data-color');
+        }
+    
+        $(options.selector).append(
+            $('<div class="mask">').css({
+                width:'100%', height:'100%', backgroundColor:bgColor, 
+                position:'absolute', top:0, left:'-100%'
+            })
+        );
+        
+        $(options.selector).find('.mask').stop().delay(options.delay).animate({left:'0%'},options.speed,'easeInExpo',function(){
+            $(this).prev().css({opacity:1});
+            $(this).stop().animate({left:'100%'},options.speed, 'easeInExpo',function(){
+                $(this).remove();
+            })
+        })
+        
     }
 })
