@@ -45,12 +45,6 @@ $(document).ready(function(){
         speed: 700,
         delay: 1000
     }); 
-    sliding({
-        type: 'box',
-        selector: '.box1',
-        speed: 600,
-        delay: 0
-    });
     
     /*------------------------함수 정의 부---------------------- */
     function activation(i){
