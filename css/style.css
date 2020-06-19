@@ -91,8 +91,8 @@ img {vertical-align:top;}
 .sliderBox ul li.on .bottom .slider h1 {opacity: 1; filter: blur(0);}
 
 .btnNext {position: absolute; right: 7%;bottom: 6%;  transform: translateY(-50%); z-index: 3; }
-.btnNext li {width: 20px; height: 2px; cursor: pointer; transition: 0.5s; float: left; margin-right: 10px; background: lightcoral;}
-.btnNext>li.on {width: 60px; background: black;}
+.btnNext li {width: 20px; height: 3px; cursor: pointer; transition: 0.5s; float: left; margin-right: 10px; background: lightcoral;}
+.btnNext>li.on {width: 60px; height: 3px; background: black;}
 
 .floatBox {width: 37%; height: 100%;position: absolute; top: 0%; right: 20%; z-index: 2; transition: 0.5s;}
 .floatBox ul {width: 100%; height: 420px;}
@@ -136,8 +136,8 @@ color: lightcoral; }
 #content .inner .wrap ul li .con3 > a:hover {background: #ddd;
 color: salmon; }
 #content>.inner>.wrap .con4>.pic {background-image: url(../img/pink6.jpg);  position: relative; top: 0px; left: 5%; background-position-y: bottom;}
-#content>.inner>.wrap .con4>.pic>h1 {position: absolute; top: 15%; right: -153px; font-family: 'Libre Baskerville', serif; transform: rotate(90deg); font-weight: bold;font-size: 33px;}
-#content>.inner>.wrap .con4>.pic::after {content: ''; width: 4px; height: 38%; background: #555; position: absolute; bottom: 0%; right: -7%; z-index: 3;border-radius: 5px;}
+#content>.inner>.wrap .con4>.pic>h1 {position: absolute; top: 15%; right: -20%; font-family: 'Libre Baskerville', serif; transform: rotate(90deg); font-weight: bold;font-size: 33px;}
+#content>.inner>.wrap .con4>.pic::after {content: ''; width: 4px; height: 38%; background: #555; position: absolute; bottom: 0%; right: -3%; z-index: 3;border-radius: 5px;}
 #content>.inner>.wrap .con4::before {content: ''; width: 100%; height: 150px; background: salmon; position: absolute; bottom: 0%; right: 0%; z-index: 1;}
 #content>.inner>.wrap .con5>.pic {background-image: url(../img/pink10.jpg); background-position-x: 50%;  position: relative; top: 0px; left: 16%;}
 #content>.inner>.wrap .con5>.pic>h1 {position: absolute; top: 4%; left: -109px; font-family: 'Libre Baskerville', serif; transform: rotate(90deg); font-weight: bold; font-size: 33px;}
@@ -212,7 +212,7 @@ background-color: black; left: 16.9878px; }
 /* footer */
 #footer {width:100%; background: rgb(255, 202, 202);}
 #footer .inner {width:100%; margin:0px auto; position: relative; transition: 0.5s;}
-#footer .inner .upper {width:85%; padding:100px 20px 50px; border-bottom:1px solid #888; box-sizing: border-box; position: relative; top: 0px; left: 50%; transform: translateX(-50%); }
+#footer .inner .upper {width:85%; padding:100px 20px 50px; border-bottom:1px solid #888; box-sizing: border-box; position: relative; top: 0px; left: 8%;}
 #footer .inner .upper::after {content:''; display:block; clear:both;}
 #footer .inner .upper .txt {position: absolute; top: 30%; left: 0%;  transform: 0.5s;}
 #footer .inner .upper h1 {font: 30px/1 'arial'; color: #555; margin-bottom: 35px; font-family: 'Libre Baskerville', serif;}
@@ -308,7 +308,7 @@ width: 71.02px; height: 71.02px; transform: scaleY(0.6) rotate(-45deg); left: 13
 
 
 /* footer */
-#footer .inner .upper {width: 95%; padding:50px 0px 70px;}
+#footer .inner .upper {width: 90%; padding:50px 0px 70px;}
 #footer .inner .upper h1 {margin-bottom: 25px; font-size: 26px;}
 #footer .inner .upper p {font-size: 13px; bottom: 10px;}
 #footer .inner .upper .terms {display: none;}
@@ -377,7 +377,7 @@ top: 43%; left: -11%; }
 #rollingBox h1:nth-of-type(1) {position: absolute; top: -46%; left: 0px;}
 #rollingBox h1:nth-of-type(2) {position: absolute; bottom: -42%; right: 0px;}
 .rbtnPrev {left:-9%;}
-.rbtnNext { right:-10%;}
+.rbtnNext { right:-8%;}
 
 
 /* bottom */
